@@ -16,9 +16,6 @@ namespace WiseMaestroRBAC.Models
         [Column("email")]
         public string? Email { get; set; }
 
-        [Column("role")]
-        public string? Role {  get; set; }
-
         [Column("created_at")]
         public DateTime Created_at { get; set; }
     }
