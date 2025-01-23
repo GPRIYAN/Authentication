@@ -36,7 +36,6 @@ namespace WiseMaestroRBAC.Services
                 {
                     Id = session.User?.Id, // Link to auth.users
                     Username = model.Username,
-                    Role = model.Role,
                     Email = model.Email,
                     Created_at = DateTime.UtcNow
                 };
