@@ -57,9 +57,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = true, // Ensure the token is intended for your application
             ValidateLifetime = true, // Ensure the token hasn't expired
             ValidateIssuerSigningKey = true, // Validate the secret key used to sign the token
-            ValidIssuer = "https://onvjmgkoecrwprukdyom.supabase.co", // Replace with your token's issuer
+            ValidIssuer = "", // Replace with your token's issuer
             ValidAudience = "authenticated", // Replace with your token's audience
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("gInvxnSRRq0hVRkrn6cwSz7blXo3LDIfXpKDyJeJgDWCeGmHFj5BJ84vIltjCnpJir4UQM0EXhdzbmH3H+mOzA==")) // Replace with your secret key
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("secretkey pasted here")) // Replace with your secret key
         };
     });
 
